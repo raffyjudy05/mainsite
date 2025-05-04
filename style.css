@@ -1,0 +1,343 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Use Poppins for a slightly more modern feel */
+    margin: 0;
+    padding: 0;
+    line-height: 1.7; /* Slightly increased line height for readability */
+    color: #333;
+    background-color: #f0f8ff; /* Light blue background */
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient background */
+    color: #fff;
+    padding: 1.5rem 0; /* Increased padding */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem; /* Increased margin */
+    font-size: 2.5em; /* Larger font size */
+    font-weight: 700; /* Bolder font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+}
+
+header h1 i {
+    margin-right: 10px; /* Space for icon */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Increased gap */
+}
+
+.nav-button {
+    background-color: #ffc107; /* Yellow/Gold color for travel theme */
+    color: #333;
+    border: none;
+    padding: 12px 25px; /* Increased padding */
+    cursor: pointer;
+    border-radius: 30px; /* More rounded */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1.1em; /* Slightly larger font */
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.nav-button i {
+    margin-right: 8px; /* Space for icon */
+}
+
+.nav-button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: translateY(-3px); /* More pronounced lift */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Styling */
+main {
+    padding: 30px 0; /* Increased padding */
+}
+
+.page {
+    display: none; /* Hidden by default */
+    background-color: #fff;
+    padding: 40px; /* Increased padding */
+    margin-bottom: 30px; /* Increased margin */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Start hidden for fade-in */
+    transform: translateY(20px); /* Start slightly below for slide-up effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation */
+}
+
+.page.active {
+    display: block; /* Shown when active */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up to position */
+}
+
+/* Travel Theme Backgrounds (using subtle patterns or gradients) */
+.travel-theme.philippines {
+    background: linear-gradient(to bottom right, #007bff, #fff); /* Blue and white gradient */
+}
+
+.travel-theme.global {
+     background: linear-gradient(to bottom right, #f8f9fa, #e9ecef); /* Light grey gradient */
+}
+
+.travel-theme.canada {
+    background: linear-gradient(to bottom right, #dc3545, #f8f9fa); /* Red and white gradient (like flag) */
+}
+
+.travel-theme.europe {
+     background: linear-gradient(to bottom right, #ffc107, #f8f9fa); /* Yellow/Gold and white (EU colors) */
+}
+
+.travel-theme.south-america {
+     background: linear-gradient(to bottom right, #28a745, #f8f9fa); /* Green and white (suggesting nature) */
+}
+
+.travel-theme.his {
+     background: linear-gradient(to bottom right, #17a2b8, #f8f9fa); /* Teal/Cyan and white */
+}
+
+.travel-theme.about {
+     background: linear-gradient(to bottom right, #6f42c1, #f8f9fa); /* Purple and white */
+}
+
+
+.page h2 {
+    color: #007bff;
+    border-bottom: 3px solid #007bff; /* Thicker border */
+    padding-bottom: 15px; /* Increased padding */
+    margin-top: 0;
+    margin-bottom: 25px; /* Increased margin */
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.page h2 i {
+     margin-right: 10px;
+}
+
+
+.page h3 {
+    color: #0056b3;
+    margin-top: 30px; /* Increased margin */
+    margin-bottom: 20px; /* Increased margin */
+    font-size: 1.3em; /* Larger font size */
+    font-weight: 600;
+}
+
+.page p {
+    margin-bottom: 18px; /* Increased margin */
+}
+
+.page ul {
+    list-style: disc;
+    margin-left: 25px; /* Increased margin */
+    margin-bottom: 18px;
+}
+
+.page ul li {
+    margin-bottom: 8px; /* Increased margin */
+}
+
+/* Home Page Specific Styling */
+#home {
+    text-align: center;
+}
+
+#home .home-buttons {
+    margin-top: 40px; /* Increased margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Increased gap */
+}
+
+#home .home-buttons .nav-button {
+     width: 80%;
+     max-width: 450px; /* Slightly larger max width */
+     background-color: #17a2b8; /* Different color for home buttons */
+     color: #fff;
+}
+
+#home .home-buttons .nav-button:hover {
+    background-color: #138496; /* Darker teal on hover */
+}
+
+
+#live-clock {
+    font-size: 1.3em; /* Larger font */
+    margin-top: 25px; /* Increased margin */
+    color: #555;
+    font-weight: 600;
+}
+
+#live-clock i {
+    margin-right: 8px;
+    color: #007bff; /* Icon color */
+}
+
+
+/* DIONEGA HIS Page Specific Styling */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 25px; /* Increased margin */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.his-button {
+    display: inline-block;
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    padding: 15px 30px; /* Increased padding */
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1.2em; /* Larger font */
+    font-weight: 600;
+    margin-top: 15px; /* Increased margin */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.his-button i {
+    margin-right: 8px;
+}
+
+
+.his-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.his-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0; /* Increased padding */
+    margin-top: 30px; /* Increased margin */
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        width: 90%;
+        max-width: 350px; /* Adjusted max width */
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .page {
+        padding: 25px;
+    }
+
+    .page h2 {
+        font-size: 1.8em;
+    }
+
+    .page h3 {
+        font-size: 1.2em;
+    }
+
+    #home .home-buttons .nav-button {
+        max-width: 350px;
+    }
+
+    #live-clock {
+        font-size: 1.1em;
+    }
+
+    .his-button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .nav-button {
+         padding: 8px 15px;
+         font-size: 0.9em;
+    }
+
+    .page {
+        padding: 20px;
+    }
+
+    .page h2 {
+        font-size: 1.5em;
+    }
+
+    .page h3 {
+        font-size: 1.1em;
+    }
+
+    #live-clock {
+        font-size: 1em;
+    }
+
+     .his-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
